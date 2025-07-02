@@ -44,4 +44,3 @@ def test_schema_integrity(pg_conn):
             assert table_exists(cur, table), f"Table {table} is missing"
             for column in columns:
                 assert column_exists(cur, table, column), f"Column {table}.{column} is missing"
-

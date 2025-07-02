@@ -29,6 +29,14 @@ CREATE TABLE IF NOT EXISTS lots (
     created_at TIMESTAMP WITHOUT TIME ZONE DEFAULT NOW()
 );
 
+CREATE TABLE IF NOT EXISTS dates (
+    date DATE PRIMARY KEY,
+    year INTEGER,
+    month INTEGER,
+    day INTEGER,
+    quarter INTEGER,
+    week INTEGER
+);
 
 CREATE TABLE IF NOT EXISTS dates (
     date DATE PRIMARY KEY,

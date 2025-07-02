@@ -20,6 +20,11 @@ export DATABASE_URL=postgres://user:pass@localhost/dbname
 ./migrate.sh
 ```
 
+```bash
+export DATABASE_URL=postgres://user:pass@localhost/dbname
+./migrate.sh
+```
+
 ### Renewal Rules
 The `renewal_rules` table stores jurisdiction specific renewal defaults.
 
