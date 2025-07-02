@@ -10,4 +10,6 @@ if [ -z "$DB_URL" ]; then
     exit 1
 fi
 
-psql "$DB_URL" -f migrations/001_init.sql
+for file in $(ls migrations/*.sql | sort); do
+    psql "$DB_URL" -f "$file"
+done

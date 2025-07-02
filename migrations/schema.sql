@@ -29,12 +29,6 @@ CREATE TABLE IF NOT EXISTS lots (
     created_at TIMESTAMP WITHOUT TIME ZONE DEFAULT NOW()
 );
 
-CREATE TABLE IF NOT EXISTS renewal_rules (
-    rule_id SERIAL PRIMARY KEY,
-    jurisdiction TEXT UNIQUE NOT NULL,
-    lead_time_days INTEGER NOT NULL,
-    permit_language TEXT
-);
 
 CREATE TABLE IF NOT EXISTS dates (
     date DATE PRIMARY KEY,
